@@ -15,7 +15,7 @@ const navbar = document.getElementById('navbar');
 // Backend API endpoint
 const API_BASE_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:8000' 
-    : 'https://YOUR-BACKEND-URL.onrender.com';  // ⚠️ UPDATE THIS AFTER DEPLOYING!
+    : 'https://biosemantica-api.onrender.com';  // ⚠️ UPDATE THIS AFTER DEPLOYING!
 
 const API_ENDPOINT = `${API_BASE_URL}/api/search`;
 
