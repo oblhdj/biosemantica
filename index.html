@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSemantica - Biological Discovery Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Floating DNA Shapes Background -->
+    <div class="bg-3d">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <i class="fas fa-dna"></i>
+                </div>
+                <span>BioSemantica</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#search" class="nav-link">Search</a>
+                <a href="#features" class="nav-link">Features</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Elements -->
+    <header class="hero">
+        <div class="hero-3d-container">
+            <div class="hero-sphere sphere-1"></div>
+            <div class="hero-sphere sphere-2"></div>
+            <div class="hero-sphere sphere-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Vector in Orbits Hackathon</div>
+            <h1 class="hero-title">
+                <span class="title-line">Discover</span>
+                <span class="title-line gradient-text">Biological</span>
+                <span class="title-line">Intelligence</span>
+            </h1>
+            <p class="hero-subtitle">Semantic search powered by AI vector embeddings</p>
+            <a href="#search" class="cta-button">
+                <span>Start Searching</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <main class="container" id="search">
+        <section class="search-section scroll-reveal-scale">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🔬</span>
+                    Search Research Papers
+                </h2>
+                <p class="section-subtitle">Enter biological concepts, genes, or research topics</p>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box-3d">
+                    <input type="text" 
+                           id="queryInput" 
+                           class="search-input"
+                           placeholder="e.g., CRISPR gene editing, tumor suppressor proteins..."
+                           autocomplete="off">
+                    <button id="searchBtn" class="search-button">
+                        <i class="fas fa-search"></i>
+                        <span>Search</span>
+                    </button>
+                </div>
+                
+                <!-- Filters -->
+                <div class="filters-3d">
+                    <div class="filter-item">
+                        <label>
+                            <i class="far fa-calendar"></i>
+                            <span>Year</span>
+                        </label>
+                        <select id="yearFilter" class="filter-select">
+                            <option value="">Any</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-item">
+                        <label>
+                            <i class="fas fa-filter"></i>
+                            <span>Output Type</span>
+                        </label>
+                        <select id="outputTypeFilter" class="filter-select">
+                            <option value="">All Types</option>
+                            <option value="text">📝 Text</option>
+                            <option value="image">📸 Images</option>
+                            <option value="sequence">🧬 Sequences</option>
+                            <option value="experiment">🔬 Experiments</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-item">
+                        <label>
+                            <i class="fas fa-list"></i>
+                            <span>Results</span>
+                        </label>
+                        <select id="resultsCount" class="filter-select">
+                            <option value="5">5</option>
+                            <option value="10" selected>10</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results -->
+            <div class="results-wrapper">
+                <div class="results-header" id="resultsHeader" style="display: none;">
+                    <h3>Results</h3>
+                    <span class="results-count" id="resultsStats"></span>
+                </div>
+                
+                <div id="resultsContainer" class="results-grid">
+                    <div class="empty-state">
+                        <div class="empty-icon">🧬</div>
+                        <h4>Ready to explore</h4>
+                        <p>Enter your query above to discover research papers</p>
+                    </div>
+                </div>
+                
+                <!-- Loading -->
+                <div class="loading-3d" id="loadingIndicator">
+                    <div class="dna-loader">
+                        <div class="dna-helix"></div>
+                        <div class="dna-helix"></div>
+                    </div>
+                    <p>Searching...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section scroll-reveal" id="features">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">⚡</span>
+                    Why BioSemantica
+                </h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card-3d scroll-reveal-left" data-tilt>
+                    <div class="feature-bg"></div>
+                    <div class="feature-icon">🚀</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Millisecond search across millions of papers using vector embeddings</p>
+                    <div class="feature-stat">
+                        <span class="stat-value">&lt;100ms</span>
+                        <span class="stat-label">response time</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card-3d scroll-reveal-right" data-tilt>
+                    <div class="feature-bg"></div>
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI-Powered</h3>
+                    <p>Deep learning models understand biological context and relationships</p>
+                    <div class="feature-stat">
+                        <span class="stat-value">95%+</span>
+                        <span class="stat-label">accuracy</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card-3d scroll-reveal-left" data-tilt>
+                    <div class="feature-bg"></div>
+                    <div class="feature-icon">🔗</div>
+                    <h3>Smart Discovery</h3>
+                    <p>Uncover hidden connections between genes, proteins, and diseases</p>
+                    <div class="feature-stat">
+                        <span class="stat-value">Deep</span>
+                        <span class="stat-label">insights</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card-3d scroll-reveal-right" data-tilt>
+                    <div class="feature-bg"></div>
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Trusted Sources</h3>
+                    <p>Curated from peer-reviewed journals and verified databases</p>
+                    <div class="feature-stat">
+                        <span class="stat-value">Quality</span>
+                        <span class="stat-label">guaranteed</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tech Stack -->
+            <div class="tech-showcase scroll-reveal-scale">
+                <h3>Powered By</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span>Qdrant</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span>Transformers</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <span>FAISS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-dna"></i>
+                <span>BioSemantica</span>
+            </div>
+            <p class="footer-text">Vector in Orbits Hackathon</p>
+            <p class="footer-team">
+                <i class="fas fa-snowflake"></i>
+                Team North Pole
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

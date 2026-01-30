@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "dataset_name": "Biology Research Corpus",
+    "version": "1.0",
+    "created_date": "2024-01-28",
+    "description": "Sample biological data including papers, sequences, images metadata, and experiments",
+    "total_items": 20
+  },
+  "texts": [
+    {
+      "content": "CRISPR-Cas9 has emerged as a powerful genome editing tool with applications ranging from basic research to therapeutic interventions. In this study, we optimized guide RNA design parameters to enhance editing efficiency and specificity in mammalian cells. Through systematic analysis of over 200 guide sequences targeting 50 different genes, we identified key sequence features that predict high editing efficiency. Our optimized design rules achieved 85% on-target editing efficiency with less than 3% off-target activity. We also developed a machine learning model to predict guide RNA performance based on sequence composition, secondary structure, and chromatin accessibility. This work provides practical guidelines for researchers conducting CRISPR experiments and demonstrates the importance of rational guide design.",
+      "metadata": {
+        "title": "Optimized Guide RNA Design for Enhanced CRISPR-Cas9 Editing",
+        "authors": "Johnson M, Smith K, Lee H, et al.",
+        "year": 2024,
+        "journal": "Nature Biotechnology",
+        "doi": "10.1038/nbt.2024.001",
+        "keywords": [
+          "CRISPR",
+          "genome editing",
+          "guide RNA",
+          "machine learning"
+        ],
+        "citation_count": 145
+      },
+      "source": "abstract"
+    },
+    {
+      "content": "Protein engineering through directed evolution has revolutionized enzyme optimization for industrial applications. We present a high-throughput screening platform combining droplet microfluidics with fluorescence-activated cell sorting (FACS) to evaluate millions of enzyme variants simultaneously. Applied to a key industrial enzyme, we generated a library of 10^7 variants through error-prone PCR and screened them for improved thermostability and catalytic efficiency. The top variant showed 15-fold higher activity at 70\u00b0C and maintained 80% activity after 24 hours at elevated temperatures, compared to wild-type enzyme. Structural analysis revealed key mutations in flexible loop regions that enhanced rigidity without compromising active site geometry.",
+      "metadata": {
+        "title": "High-Throughput Directed Evolution of Thermostable Enzymes",
+        "authors": "Chen L, Rodriguez P, Kim S, et al.",
+        "year": 2024,
+        "journal": "Science",
+        "doi": "10.1126/science.2024.002",
+        "keywords": [
+          "protein engineering",
+          "directed evolution",
+          "thermostability",
+          "FACS"
+        ]
+      },
+      "source": "abstract"
+    },
+    {
+      "content": "Western Blot Protocol for Protein Detection. Materials: SYBR Green master mix, gene-specific primers, cDNA template, nuclease-free water, 96-well qPCR plates. Procedure: 1. Sample Preparation - Lyse cells in RIPA buffer with protease inhibitors. Quantify protein concentration using BCA assay. 2. Gel Electrophoresis - Load 20\u03bcg protein per well on 10% SDS-PAGE gel. Run at 120V for 90 minutes. 3. Transfer - Transfer proteins to PVDF membrane at 100V for 60 minutes at 4\u00b0C. 4. Blocking - Block membrane with 5% milk in TBST for 1 hour at room temperature. 5. Primary Antibody - Incubate with primary antibody (1:1000 dilution) overnight at 4\u00b0C. 6. Secondary Antibody - Incubate with HRP-conjugated secondary antibody (1:5000) for 1 hour. 7. Detection - Visualize using ECL substrate and imaging system.",
+      "metadata": {
+        "protocol_name": "Western Blot Protocol",
+        "technique": "Protein Detection",
+        "difficulty": "intermediate",
+        "duration_hours": 12,
+        "applications": [
+          "protein quantification",
+          "expression analysis"
+        ]
+      },
+      "source": "protocol"
+    },
+    {
+      "content": "Quantitative PCR (qPCR) Protocol for Gene Expression Analysis. Sample Preparation: Dilute cDNA to 10 ng/\u03bcL in nuclease-free water. Prepare primer working solutions (500 nM final). Thaw SYBR Green master mix on ice. Reaction Setup (20 \u03bcL total volume): 10 \u03bcL SYBR Green master mix (2x), 1 \u03bcL forward primer (500 nM final), 1 \u03bcL reverse primer (500 nM final), 2 \u03bcL cDNA template (20 ng total), 6 \u03bcL nuclease-free water. Thermal Cycling: Initial denaturation at 95\u00b0C for 10 min, then 40 cycles of denaturation at 95\u00b0C for 15 sec and annealing/extension at 60\u00b0C for 60 sec. Melt curve: 60-95\u00b0C, increment 0.5\u00b0C/5 sec. Data Analysis: Use \u0394\u0394Ct method for relative quantification. Normalize to housekeeping genes (GAPDH, ACTB). Technical triplicates required.",
+      "metadata": {
+        "protocol_name": "qPCR Gene Expression",
+        "technique": "Quantitative PCR",
+        "difficulty": "intermediate",
+        "duration_hours": 4,
+        "applications": [
+          "gene expression",
+          "validation",
+          "screening"
+        ]
+      },
+      "source": "protocol"
+    },
+    {
+      "content": "Single-cell RNA sequencing (scRNA-seq) has transformed our understanding of cellular heterogeneity in complex tissues. We developed an improved protocol combining droplet-based cell capture with optimized reverse transcription to achieve 95% cell recovery and detection of over 5,000 genes per cell. Applied to tumor microenvironment analysis, we identified 12 distinct cell populations including rare cancer stem cells comprising less than 1% of the total population. Trajectory analysis revealed developmental hierarchies and transition states between cell types. Integration with spatial transcriptomics data enabled reconstruction of tissue architecture and cell-cell interaction networks.",
+      "metadata": {
+        "title": "Enhanced Single-Cell RNA Sequencing for Tumor Analysis",
+        "authors": "Wang Y, Martinez A, Brown T, et al.",
+        "year": 2024,
+        "journal": "Cell",
+        "doi": "10.1016/cell.2024.003",
+        "keywords": [
+          "scRNA-seq",
+          "tumor microenvironment",
+          "cellular heterogeneity"
+        ]
+      },
+      "source": "abstract"
+    }
+  ],
+  "sequences": [
+    {
+      "sequence": "ATGGTGAGCAAGGGCGAGGAGCTGTTCACCGGGGTGGTGCCCATCCTGGTCGAGCTGGACGGCGACGTAAACGGCCACAAGTTCAGCGTGTCCGGCGAGGGCGAGGGCGATGCCACCTACGGCAAGCTGACCCTGAAGTTCATCTGCACCACCGGCAAGCTGCCCGTGCCCTGGCCCACCCTCGTGACCACCCTGACCTACGGCGTGCAGTGCTTCAGCCGCTACCCCGACCACATGAAGCAGCACGACTTCTTCAAGTCCGCCATGCCCGAAGGCTACGTCCAGGAGCGCACCATCTTCTTCAAGGACGACGGCAACTACAAGACCCGCGCCGAGGTGAAGTTCGAGGGCGACACCCTGGTGAACCGCATCGAGCTGAAGGGCATCGACTTCAAGGAGGACGGCAACATCCTGGGGCACAAGCTGGAGTACAACTACAACAGCCACAACGTCTATATCATGGCCGACAAGCAGAAGAACGGCATCAAGGTGAACTTCAAGATCCGCCACAACATCGAGGACGGCAGCGTGCAGCTCGCCGACCACTACCAGCAGAACACCCCCATCGGCGACGGCCCCGTGCTGCTGCCCGACAACCACTACCTGAGCACCCAGTCCGCCCTGAGCAAAGACCCCAACGAGAAGCGCGATCACATGGTCCTGCTGGAGTTCGTGACCGCCGCCGGGATCACTCTCGGCATGGACGAGCTGTACAAGTAA",
+      "type": "dna",
+      "metadata": {
+        "gene": "EGFP",
+        "organism": "Aequorea victoria",
+        "function": "Enhanced green fluorescent protein",
+        "expression_level": "high",
+        "codon_optimized": true,
+        "length": 720,
+        "molecular_weight": 26900,
+        "validated": true,
+        "applications": [
+          "reporter gene",
+          "fluorescence imaging",
+          "protein tagging"
+        ]
+      }
+    },
+    {
+      "sequence": "ATGGCTAGCAAAGGAGAAGAACTTTTCACTGGAGTTGTCCCAATTCTTGTTGAATTAGATGGTGATGTTAATGGGCACAAATTTTCTGTCAGTGGAGAGGGTGAAGGTGATGCAACATACGGAAAACTTACCCTTAAATTTATTTGCACTACTGGAAAACTACCTGTTCCATGGCCAACACTTGTCACTACTTTCTCTTATGGTGTTCAATGCTTTTCCCGTTATCCGGATCATATGAAACGGCATGACTTTTTCAAGAGTGCCATGCCCGAAGGTTATGTACAGGAACGCACTATATCTTTCAAAGATGACGGGAACTACAAGACGCGTGCTGAAGTCAAGTTTGAAGGTGATACCCTTGTTAATCGTATCGAGTTAAAAGGTATTGATTTTAAAGAAGATGGAAACATTCTCGGACACAAACTCGAGTACAACTATAACTCACACAATGTATACATCACGGCAGACAAACAAAAGAATGGAATCAAAGCTAACTTCAAAATTCGCCACAACATTGAAGATGGATCCGTTCAACTAGCAGACCATTATCAACAAAATACTCCAATTGGCGATGGCCCTGTCCTTTTACCAGACAACCATTACCTGTCGACACAATCTGCCCTTTCGAAAGATCCCAACGAAAAGCGTGACCACATGGTCCTTCTTGAGTTTGTAACTGCTGCTGGGATTACACATGGCATGGATGAGCTCTACAAATAA",
+      "type": "dna",
+      "metadata": {
+        "gene": "GFP",
+        "organism": "Aequorea victoria",
+        "function": "Wild-type green fluorescent protein",
+        "expression_level": "medium",
+        "codon_optimized": false,
+        "length": 714,
+        "parent": "wild-type",
+        "validated": true
+      }
+    },
+    {
+      "sequence": "MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITLGMDELYK",
+      "type": "protein",
+      "metadata": {
+        "protein_name": "EGFP",
+        "function": "Fluorescent protein",
+        "molecular_weight": 26900,
+        "isoelectric_point": 6.0,
+        "extinction_coefficient": 55000,
+        "quantum_yield": 0.6,
+        "brightness": 33000,
+        "maturation_time": "30 min",
+        "oligomerization": "monomer",
+        "stability": "high",
+        "validated": true
+      }
+    },
+    {
+      "sequence": "ATGAAACGTATTCGATCGATCGATCGATCGTAGCTAGCTAGCTAGCTAGCTAGCTAG",
+      "type": "dna",
+      "metadata": {
+        "gene": "test_construct_1",
+        "function": "Test sequence for variant analysis",
+        "expression_level": "low",
+        "validated": false,
+        "notes": "Synthetic construct for testing"
+      }
+    },
+    {
+      "sequence": "ATGCCCGGATCGATCGATCGATCGATCGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG",
+      "type": "dna",
+      "metadata": {
+        "gene": "test_construct_2",
+        "function": "Test sequence variant",
+        "expression_level": "medium",
+        "validated": false,
+        "parent": "test_construct_1"
+      }
+    }
+  ],
+  "images": [
+    {
+      "image_path": "biology_images/microscopy_merged.png",
+      "image_description": "Fluorescence microscopy image showing HeLa cells stained with DAPI",
+      "metadata": {
+        "experiment": "Cell morphology study",
+        "magnification": "40x",
+        "stain": "DAPI",
+        "cell_line": "HeLa",
+        "date": "2024-01-15",
+        "resolution": "2048x2048",
+        "channels": [
+          "DAPI",
+          "GFP"
+        ],
+        "exposure_time": "100ms",
+        "objective": "40x/0.75 NA"
+      },
+      "type": "microscopy"
+    },
+    {
+      "image_path": "biology_images/western_blot.png",
+      "image_description": "Western blot gel showing protein expression levels",
+      "metadata": {
+        "experiment": "Protein expression validation",
+        "technique": "Western Blot",
+        "protein": "EGFP",
+        "antibody": "anti-GFP (1:1000)",
+        "date": "2024-01-18",
+        "samples": [
+          "control",
+          "treated_24h",
+          "treated_48h"
+        ]
+      },
+      "type": "gel"
+    },
+    {
+      "image_path": "biology_images/mass_spectrum.png",
+      "image_description": "Mass spectrometry spectrum of protein sample",
+      "metadata": {
+        "experiment": "Protein identification and characterization",
+        "instrument": "Orbitrap Fusion Lumos",
+        "mode": "positive ion mode",
+        "resolution": "120000 FWHM",
+        "mass_range": "100-2000 m/z",
+        "date": "2024-01-17",
+        "sample_type": "purified protein",
+        "ionization": "electrospray ionization (ESI)"
+      },
+      "type": "mass_spectrometry"
+    },
+    {
+      "image_path": "biology_images/agarose_gel.png",
+      "image_description": "Agarose gel electrophoresis showing PCR products",
+      "metadata": {
+        "experiment": "PCR amplification validation",
+        "gel_type": "1% agarose",
+        "voltage": "100V",
+        "run_time": "45 min",
+        "stain": "ethidium bromide",
+        "ladder": "1kb DNA ladder",
+        "date": "2024-01-18",
+        "number_of_lanes": 10,
+        "expected_product_size": "450 bp"
+      },
+      "type": "gel_electrophoresis"
+    },
+    {
+      "image_path": "biology_images/flow_cytometry.png",
+      "image_description": "Flow cytometry scatter plot showing GFP expression",
+      "metadata": {
+        "experiment": "CRISPR editing efficiency assessment",
+        "instrument": "BD FACSAria III",
+        "cells_analyzed": 10000,
+        "gfp_positive_percentage": 28.6,
+        "date": "2024-01-16",
+        "gating_strategy": "FSC/SSC debris removal, GFP threshold",
+        "controls": [
+          "non-transfected",
+          "GFP plasmid positive control"
+        ]
+      },
+      "type": "flow_cytometry"
+    }
+  ],
+  "experiments": [
+    {
+      "description": "Optimization of CRISPR-Cas9 editing efficiency in HEK293T cells using optimized guide RNA design",
+      "conditions": {
+        "cell_line": "HEK293T",
+        "target_gene": "EGFP",
+        "guide_rna_sequence": "GGCGAGGAGCTGTTCACCGG",
+        "guide_rna_score": 78,
+        "cas9_concentration": "100 nM",
+        "delivery_method": "lipofection",
+        "lipofection_reagent": "Lipofectamine CRISPRMAX",
+        "incubation_time_hours": 48,
+        "temperature": "37C",
+        "co2_percentage": 5,
+        "cell_density": "2e5 cells/well"
+      },
+      "results": {
+        "success": true,
+        "editing_efficiency": 0.87,
+        "cell_viability": 0.91,
+        "off_target_rate": 0.02,
+        "indel_spectrum": {
+          "deletions": 0.65,
+          "insertions": 0.22,
+          "substitutions": 0.13
+        },
+        "protein_knockout_confirmed": true,
+        "flow_cytometry_negative_percentage": 0.89,
+        "notes": "Highly efficient editing with minimal toxicity. Guide RNA design score was 78 indicating high predicted efficiency."
+      },
+      "metadata": {
+        "investigator": "Dr. Sarah Johnson",
+        "date": "2024-01-15",
+        "lab": "Genome Engineering Laboratory",
+        "institution": "Stanford University",
+        "funding": "NIH R01",
+        "replicate_number": 3,
+        "protocol_version": "v2.1"
+      }
+    },
+    {
+      "description": "Failed CRISPR experiment due to poor guide RNA design and suboptimal delivery method",
+      "conditions": {
+        "cell_line": "HEK293T",
+        "target_gene": "EGFP",
+        "guide_rna_sequence": "ATATATATATATATATATATAT",
+        "guide_rna_score": 12,
+        "cas9_concentration": "50 nM",
+        "delivery_method": "electroporation",
+        "voltage": "1200V",
+        "pulse_length": "20ms",
+        "incubation_time_hours": 24,
+        "temperature": "37C",
+        "co2_percentage": 5
+      },
+      "results": {
+        "success": false,
+        "editing_efficiency": 0.12,
+        "cell_viability": 0.68,
+        "off_target_rate": 0.15,
+        "indel_spectrum": {
+          "deletions": 0.4,
+          "insertions": 0.35,
+          "substitutions": 0.25
+        },
+        "protein_knockout_confirmed": false,
+        "flow_cytometry_negative_percentage": 0.15,
+        "notes": "Poor guide RNA with AT-rich sequence led to low efficiency. High off-target activity observed. Low viability likely due to electroporation stress."
+      },
+      "metadata": {
+        "investigator": "Dr. Sarah Johnson",
+        "date": "2024-01-08",
+        "lab": "Genome Engineering Laboratory",
+        "institution": "Stanford University",
+        "funding": "NIH R01",
+        "replicate_number": 2,
+        "lessons_learned": "Avoid AT-rich guides, use lipofection instead of electroporation for HEK293T cells"
+      }
+    },
+    {
+      "description": "Protein expression optimization using different IPTG concentrations in E. coli",
+      "conditions": {
+        "host": "E. coli BL21(DE3)",
+        "plasmid": "pET28a-EGFP",
+        "promoter": "T7",
+        "inducer": "IPTG",
+        "concentration_tested": [
+          0.1,
+          0.3,
+          0.5,
+          0.8,
+          1.0
+        ],
+        "optimal_concentration": "0.5 mM",
+        "temperature": "37C",
+        "induction_time_hours": 4,
+        "od600_at_induction": 0.6,
+        "shaking_speed": "200 rpm",
+        "culture_volume": "500 mL"
+      },
+      "results": {
+        "success": true,
+        "optimal_iptg_concentration": "0.5 mM",
+        "protein_yield": "180 mg/L",
+        "soluble_fraction": 0.75,
+        "purity_after_purification": 0.92,
+        "activity_confirmed": true,
+        "fluorescence_intensity": 850000,
+        "expression_kinetics": "Linear 0-4h, plateau at 4h",
+        "notes": "Excellent yield with high soluble fraction. Lower IPTG concentration (0.5 mM) reduced inclusion body formation compared to 1.0 mM."
+      },
+      "metadata": {
+        "investigator": "Dr. Michael Chen",
+        "date": "2024-01-20",
+        "lab": "Protein Engineering Laboratory",
+        "institution": "MIT",
+        "funding": "NSF CAREER",
+        "replicate_number": 4,
+        "protocol_version": "v1.3"
+      }
+    },
+    {
+      "description": "Single-cell RNA-seq analysis of tumor microenvironment in breast cancer sample",
+      "conditions": {
+        "tissue": "breast cancer tumor",
+        "patient_id": "BC_1234",
+        "tumor_stage": "Stage IIB",
+        "dissociation_method": "enzymatic",
+        "enzymes": [
+          "collagenase IV",
+          "hyaluronidase"
+        ],
+        "dissociation_time": "30 min",
+        "cell_viability_threshold": 0.85,
+        "cells_captured": 8524,
+        "sequencing_depth": "50000 reads/cell",
+        "platform": "10x Genomics Chromium",
+        "chemistry": "v3.1"
+      },
+      "results": {
+        "success": true,
+        "cells_passing_qc": 7892,
+        "median_genes_per_cell": 2847,
+        "median_umi_per_cell": 8524,
+        "cell_types_identified": 12,
+        "major_populations": {
+          "Cancer cells": 0.45,
+          "T cells": 0.2,
+          "Macrophages": 0.15,
+          "Fibroblasts": 0.1,
+          "B cells": 0.05,
+          "Other": 0.05
+        },
+        "rare_population": "Cancer stem cells (0.8%)",
+        "marker_genes_discovered": 450,
+        "trajectory_analysis_completed": true,
+        "developmental_trajectories": 3,
+        "notes": "High-quality data with clear cell type separation. Rare cancer stem cell population successfully detected and characterized."
+      },
+      "metadata": {
+        "investigator": "Dr. Lisa Wang",
+        "date": "2024-01-25",
+        "lab": "Cancer Genomics Laboratory",
+        "institution": "UCSF",
+        "funding": "NIH U01",
+        "ethics_approval": "IRB-2023-0456",
+        "data_availability": "GEO: GSE123456",
+        "replicate_number": 1
+      }
+    },
+    {
+      "description": "Drug screening assay for cancer cell line sensitivity",
+      "conditions": {
+        "cell_line": "MCF7",
+        "drug_tested": "Doxorubicin",
+        "concentration_range": "0.001-100 \u00b5M",
+        "treatment_duration": "72 hours",
+        "assay_type": "MTT",
+        "plate_format": "96-well",
+        "replicates_per_condition": 6
+      },
+      "results": {
+        "success": true,
+        "ic50": "1.2 \u00b5M",
+        "max_inhibition": 0.95,
+        "hill_slope": -1.1,
+        "cell_viability_control": 1.0,
+        "dose_response_r_squared": 0.98,
+        "notes": "Clear dose-response curve. IC50 consistent with literature values for MCF7 cells."
+      },
+      "metadata": {
+        "investigator": "Dr. Robert Kim",
+        "date": "2024-01-22",
+        "lab": "Cancer Therapeutics Lab",
+        "institution": "Johns Hopkins",
+        "funding": "NIH R21",
+        "replicate_number": 3
+      }
+    }
+  ]
+}
